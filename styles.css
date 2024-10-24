@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    width: 100px;
+}
+
+
+nav{
+    background-color: rgb(39, 38, 38);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+    padding: 10px 50px;
+}
+
+ul{
+    display: flex;
+    gap: 1em;
+}
+
+ul > li{
+    list-style: none;
+}
+
+ul > li > a, .btn{
+    text-decoration: none;
+    color: whitesmoke;
+}
+ul li a:hover{
+    color: rgb(127, 21, 24);
+}
+
+/* End of Nav Styles */
+
+.hero-image-container{
+    background-color: chartreuse;
+    width: 100;
+    height: 250px;
+    margin-inline: auto;
+}
+
+.hero-image{
+    width: 100%;
+    height: 100%;
+}
+
+/* End of Hero section styles */
+
+/* more info*/
+
+#more-info {
+    padding: 50px 20px;
+    text-align: center;
+}
+.rol{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.moreimg{
+    width: 50%;
+    height: 200px;
+}
+.info-content{
+    display: flex;
+    align-items: center;
+    
+}
+
+#services {
+    padding: 30px 20px;
+    background-color: #f1f1f1;
+    gap: 1em;
+    
+}
+.go{
+    display: flex;
+    gap: 1em;
+    
+}
+
+#services h2, #more-info h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(77, 3, 6)
+}
+
+
+.service {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/*----Gallery --*/
+
+.categories{
+    margin-top: 1em;
+    display: flex;
+    
+}
+.col{
+    flex-basis: 40%;
+    min-width: 100px;
+    padding: 10px;
+    margin-bottom: 50px;
+    transition: 0.5s;
+}
+.col img{
+    height: 200px;
+    width: 100%;
+    border-radius: 0.4em;
+}
+.second h2{
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(77, 3, 6);
+}
+.col h4, .col p{
+    color:  rgb(0, 0, 0);
+}
+.col:hover{
+    transform: translatey(5px);
+}
+
+
+#cta {
+    background-color:rgb(39, 38, 38);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/*end of moreinfo*/
+main{
+    background-color: rgb(39, 38, 38);
+    color: white;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 1em;
+}
+main > section {
+    text-align: center;
+}
+
+
+input, button{
+    padding: 0.5em;
+    border-radius: 0.4em;
+}
+
+/* End of main style */
+
+
+/*---footer-----*/
+footer{
+    padding:12px;
+    background-color: rgb(39, 38, 38);
+    text-align: center;
+    color: white;
+    
+    }
+    
+.footer-link {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:90%;
+    margin:auto;
+    text-align:center;
+    padding-top:8px;
+}
+
+.link a, .privacy a{
+    color:white;
+    font-size:13px;
+    display:flex;
+    flex-direction:cloumn;
+    width:100%;
+    margin:auto;
+    text-decoration: none;
+}
+
+.link a, .privacy a:hover{
+    color: rgb(127, 21, 24);
+}
+
+
+@media screen and (max-width: 495px){
+    .info-content{
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse ;
+        gap: 1rem;
+    }
+
+    .go{
+        display: flex;
+        gap: 1em;
+        flex-direction: column;
+    }
+
+    .categories{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+
+        .col{
+            margin-bottom: 0;
+        }
+        #cta{
+        gap: 1rem;
+        }
+    main > section{
+        gap: 1rem;
+        }
+    footer{
+        padding: 15px;
+    }
+}
+
+
+
